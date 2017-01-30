@@ -3,11 +3,17 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: This is a local constraint on a `unit`. First, we need to find those `boxes`
+who contain(has and only has) the same `digits` in a unit, and the number of 
+`digits` should
+be equal to the number of `boxes` who contain them. Then, we should concat all
+`digits` we found(if there are multiple groups of twins), and delete these `digits` from 
+other `boxes` in the same `unit`.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: This is a new type of `unit` which is a constraint affects the validation of a
+sudoku's solution. We just treat is as the `unit` types we already have.
 
 ### Install
 
